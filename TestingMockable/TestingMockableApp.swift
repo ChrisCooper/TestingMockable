@@ -15,3 +15,7 @@ struct TestingMockableApp: App {
         }
     }
 }
+
+protocol ExampleProtocol {
+    func doSomething() -> String
+}
