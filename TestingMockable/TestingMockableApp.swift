@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Mockable
 
 @main
 struct TestingMockableApp: App {
@@ -16,6 +17,14 @@ struct TestingMockableApp: App {
     }
 }
 
+@Mockable
 protocol ExampleProtocol {
     func doSomething() -> String
+}
+
+
+func myTest() {
+    let m = MockExampleProtocol()
+    given(m).doSomething().willReturn("a string")
+    print(m.doSomething())
 }
