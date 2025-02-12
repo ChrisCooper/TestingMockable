@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		83CE7CFC2D5D558900834C12 /* Mockable in Frameworks */ = {isa = PBXBuildFile; productRef = 83CE7CFB2D5D558900834C12 /* Mockable */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		83CE7CDE2D5D545600834C12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CE7CFC2D5D558900834C12 /* Mockable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = TestingMockable;
 			packageProductDependencies = (
+				83CE7CFB2D5D558900834C12 /* Mockable */,
 			);
 			productName = TestingMockable;
 			productReference = 83CE7CCD2D5D545500834C12 /* TestingMockable.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 83CE7CC42D5D545500834C12;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				83CE7CFA2D5D558900834C12 /* XCRemoteSwiftPackageReference "Mockable" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 83CE7CCE2D5D545500834C12 /* Products */;
 			projectDirPath = "";
@@ -410,6 +419,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.TestingMockable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited) MOCKING";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,6 +562,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83CE7CFA2D5D558900834C12 /* XCRemoteSwiftPackageReference "Mockable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kolos65/Mockable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83CE7CFB2D5D558900834C12 /* Mockable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83CE7CFA2D5D558900834C12 /* XCRemoteSwiftPackageReference "Mockable" */;
+			productName = Mockable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CE7CC52D5D545500834C12 /* Project object */;
 }
